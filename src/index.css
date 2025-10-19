@@ -19,6 +19,34 @@
 .container2 {
   @apply mx-auto w-full max-w-[1240px] px-[4%] lg:px-[5%];
 }
-/* .active {
-  @apply font-medium text-gray-900 bg-gray-300;
-} */
+
+.active {
+  @apply font-medium text-gray-900 bg-gray-300 rounded-sm transition-all duration-200;
+}
+/* scroll bar handle show when user hover  */
+/* Custom scrollbar behavior */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scrollbar-hover {
+  scrollbar-width: thin; /* Firefox */
+}
+
+.scrollbar-hover::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-hover::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.scrollbar-hover::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

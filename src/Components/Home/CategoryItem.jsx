@@ -6,6 +6,7 @@ const CategoryItem = ({ category }) => {
     <>
       <NavLink
         to={`category/${category.id}`}
+        state={{ category: category.name }}
         className="w-full py-2.5 px-5  text-gray-500 mt-2"
       >
         {category.name}

@@ -4,7 +4,7 @@ import QZone from "./QZone";
 
 const RightAside = () => {
   return (
-    <div className="col-span-1">
+    <div className="col-span-1 sticky top-16 z-5 h-screen overflow-y-auto scrollbar-hide hover:scrollbar-hover">
       <h1 className="text-xl font-medium">Login With</h1>
       <div className="space-y-3 mt-4">
         {/* Email */}

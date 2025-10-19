@@ -2,7 +2,7 @@ import React from "react";
 import userIcon from "../assests/user.png";
 const Navbar = () => {
   return (
-    <div className="container2 flex justify-between items-center mb-16">
+    <div className="container2 flex justify-between items-center mb-16 sticky top-0 z-10 bg-white shadow">
       <div></div>
       <nav>
         <ul className="flex gap-10">

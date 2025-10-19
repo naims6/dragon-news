@@ -1,13 +1,11 @@
 import React, { use } from "react";
 import CategoryItem from "./CategoryItem";
-const fetcher = fetch("./public/data/categories.json").then((res) =>
-  res.json()
-);
+// fetching catogory item
+const fetcher = fetch("/data/categories.json").then((res) => res.json());
 const LeftAside = () => {
   const categories = use(fetcher);
-  console.log(categories);
   return (
-    <div className="col-span-1">
+    <div className="col-span-1 sticky top-16 z-5 h-screen">
       <h1 className="font-medium text-xl">All Category</h1>
       <div>
         <ul className="flex flex-col">
