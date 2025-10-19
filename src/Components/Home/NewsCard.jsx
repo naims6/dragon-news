@@ -1,5 +1,8 @@
+import { Link } from "react-router";
+
 const NewsCard = ({ news }) => {
   const {
+    id,
     title,
     rating,
     total_view,
@@ -39,7 +42,12 @@ const NewsCard = ({ news }) => {
 
         <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
 
-        <p className="text-gray-700 text-sm mb-4">{details.slice(0, 200)}...</p>
+        <p className="text-gray-700 text-sm mb-4">
+          {details.slice(0, 200)}
+          <Link to={`/newsdetails/${id}`}>
+            <span className="text-pink-600 cursor-pointer">...Read More</span>
+          </Link>
+        </p>
 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
